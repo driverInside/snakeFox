@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+	<title>SnakeFox</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css"> <!-- normalized styles-->
+	<link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- FiraSans fonts-->
+	<link rel="stylesheet" type="text/css" href="css/app.css"> <!-- app styles -->
+	<!-- zepto -->
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<!-- snakefox !-->
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+
+	<div id="main-container">
+		<div id="header">
+			<header>
+				<div><h1 class="ts">Score: <span id="score" class="ts">0</span></h1></div>
+				
+			</header>
+		</div>
+		<div id="snake-container">
+			<div id="level-container">
+				<p class="b">Level: <span id="level">1</span></p>
+			</div>
+			
+			<div id="version-container">
+				<small>Snake v1.3 | @driverInside</small>
+			</div>
+				
+			<div id="panel">
+				<canvas id="snakefox" width="250" height="250"></canvas>
+			</div>
+			
+		</div>
+		<footer id="controls-container">
+			<div id="pad">
+				<div class="u"></div>
+				<div class="l"></div>
+				<div class="r"></div>
+				<div class="d"></div>
+			</div>
+			<section>
+				<img src="images/logo.png">
+			</section>
+		</footer>
+	</div>
+
+</body>
+</html>

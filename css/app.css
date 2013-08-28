@@ -1,0 +1,155 @@
+/*************************************************************************
+ app.css
+ SnakeFox
+ V. 1.2
+ 	Hiram E. Pérez
+ 	@driverInside
+
+ 	Copyright (C) 2013  Hiram E. Pérez
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+  ************************************************************************/
+
+body { font-family: 'FiraSans'; background: url('../images/pattern.png'); }
+
+
+/**************
+ main container
+***************/
+#main-container{
+    width: 320px;
+    margin: 0 auto;
+}
+
+/**************
+ header
+***************/
+header { 
+	background: #4D4E53 url('../images/pattern.png'); /* Mozilla charcoal */
+	padding-left: 15px;
+	margin-bottom: 10px;
+    height: 50px;
+	line-height: 50px;
+    color: #fff;
+    font-size: 26px;	
+}
+
+/******************
+ snake-container
+ ******************/
+#panel{
+    width: 250px;
+    margin: 0 auto;
+}
+#panel canvas{
+    margin-top: 5px;
+}
+#level-container {
+    /*margin: 5px 0 0 30px;*/
+    margin-left: 10px;
+    color: #00539F;
+    float: left;
+}
+#version-container small{
+    font-size: 10px;
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+    color: #00539F;
+}
+
+
+
+
+/******************
+ controls-container
+*******************/
+#controls-container{
+    position: fixed;
+    bottom: 0px;
+    width: 320px;
+    height: 110px;
+    background: #4D4E53 url('../images/pattern.png'); /* Mozilla charcoal */
+}
+/*****
+  pad
+******/
+#pad{
+
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 10px;    
+}
+
+/*'arrows'*/
+#pad .u,  
+#pad .l,  
+#pad .r,  
+#pad .d   
+{
+    height: 29px;
+    width:  29px;
+    line-height: 29px;
+    background-repeat: no-repeat;
+}
+#pad .u:active,  
+#pad .l:active,  
+#pad .r:active   
+{
+    background: #fff;
+}
+#pad .u { /*up*/
+    background: url('../images/arrows_b.png') 0 -38px;
+    margin-left: 30px;
+}
+#pad .u:active {
+    background: url('../images/arrows_b.png') -30px -38px;
+}
+#pad .l { /*left*/
+    background: url('../images/arrows_b.png') 0 -78px;
+    margin-top: 3px;
+    float: left;
+}
+#pad .l:active{
+    background: url('../images/arrows_b.png') -30px -78px;
+}
+#pad .r { /*right*/
+    background: url('../images/arrows_b.png') 0 -118px;
+    margin-top: 3px;
+    float: right;
+}
+#pad .r:active {
+    background: url('../images/arrows_b.png') -30px -118px;
+}
+#pad .d { /*down*/
+    background: url('../images/arrows_b.png') 0 0;
+    margin-top: 34px;
+    margin-left: 30px;
+}
+#pad .d:active {
+    background: url('../images/arrows_b.png') -30px 0;
+}
+#controls-container section{
+    position: fixed;
+    bottom: 0;
+    left: 10;
+}
+/*
+ extras
+*/
+.ts { /*text shadow*/
+    text-shadow: 2px 2px 1px rgba(10, 10, 10, 0.7);
+}
+.b { font-weight: bold;}
