@@ -1,5 +1,5 @@
 {
-  "version": 1.3,
+  "version": "1.3",
   "name": "SnakeFox",
   "description": "Snake game for FFOS",
   "launch_path": "/index.html",
