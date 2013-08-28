@@ -148,7 +148,6 @@ $(function(){
 			}
 
 			score = score + (10 * level);
-			console.log(score + " " + level);
 
 			switch(snake.length){
 				case 6:
