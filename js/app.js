@@ -69,7 +69,7 @@ $(function(){
 		if(typeof gameLoop != "undefined"){
 			clearInterval(gameLoop);
 		}
-		gameLoop = setInterval(paintSnake, (1000 / level));
+		gameLoop = setInterval(paintSnake, (1000 / (level * 2)));
 	} // end init function
 
 	init();
@@ -153,47 +153,47 @@ $(function(){
 				case 6:
 					level = 2;
 					clearInterval(gameLoop);
-					gameLoop = setInterval(paintSnake, (1000 / level));
+					gameLoop = setInterval(paintSnake, (1000 / (level * 1.5)));
 					break;
 				case 8:
 					level = 3;
 					clearInterval(gameLoop);
-					gameLoop = setInterval(paintSnake, (1000 / level));
+					gameLoop = setInterval(paintSnake, (1000 / (level * 1.5)));
 					break;
 				case 11:
 					level = 4;
 					clearInterval(gameLoop);
-					gameLoop = setInterval(paintSnake, (1000 / level));
+					gameLoop = setInterval(paintSnake, (1000 / (level * 1.5)));
 					break;
 				case 15:
 					level = 5;
 					clearInterval(gameLoop);
-					gameLoop = setInterval(paintSnake, (1000 / level));
+					gameLoop = setInterval(paintSnake, (1000 / (level * 1.5)));
 					break;
 				case 25:
 					level = 6;
 					clearInterval(gameLoop);
-					gameLoop = setInterval(paintSnake, (1000 / level));
+					gameLoop = setInterval(paintSnake, (1000 / (level * 1.5)));
 					break;
 				case 50:
 					level = 7;
 					clearInterval(gameLoop);
-					gameLoop = setInterval(paintSnake, (1000 / level));
+					gameLoop = setInterval(paintSnake, (1000 / (level * 1.5)));
 					break;
 				case 100:
 					level = 8;
 					clearInterval(gameLoop);
-					gameLoop = setInterval(paintSnake, (1000 / level));
+					gameLoop = setInterval(paintSnake, (1000 / (level * 1.5)));
 					break;
 				case 200:
 					level = 9;
 					clearInterval(gameLoop);
-					gameLoop = setInterval(paintSnake, (1000 / level));
+					gameLoop = setInterval(paintSnake, (1000 / (level * 1.5)));
 					break;
 				case 400:
 					level = 10;
 					clearInterval(gameLoop);
-					gameLoop = setInterval(paintSnake, (1000 / level));
+					gameLoop = setInterval(paintSnake, (1000 / (level * 1.5)));
 					break;
 			}
 			/*
